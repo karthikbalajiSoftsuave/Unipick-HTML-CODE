@@ -1,0 +1,428 @@
+
+/* Font face */
+@font-face {
+    font-family: futura_lt;
+    src: url(../fonts/futura\ light\ bt.ttf);
+}
+@font-face {
+    font-family: futura_md;
+    src: url(../fonts/futura\ medium\ bt.ttf);
+}
+@font-face {
+    font-family: Helvetica_up;
+    src: url(../fonts/HELVETICANEUELTSTD\ LT_1.OTF);
+}
+
+/* common css */
+html, body, div, span, applet, object, iframe,
+blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: futura_md;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+a,button,input,a:focus,button:focus,input:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+p{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: Helvetica_up;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+    font-family: futura_lt;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.pos-relative{
+    position: relative;
+}
+/* header */
+header{
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.13);
+}
+.top-header{
+    background: #6AC7C9;
+    padding: 10px;
+}
+.top-header p{
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+}
+.top-header ul.tp-header-list{
+    text-align: right;
+}
+.top-header ul.tp-header-list li{
+    display: inline-block;
+}
+.top-header ul.tp-header-list li a{
+    color: #fff;
+    padding: 0px 15px;
+    font-family: futura_md;
+}
+.top-header ul.tp-header-list li ul{
+    padding: 0px 0px 0px 5px;
+}
+.top-header ul.tp-header-list li ul li{
+    padding: 0px 10px;
+}
+.top-header ul.tp-header-list li ul li a{padding: 0;}
+.top-header ul.tp-header-list li ul li span{
+    color: #fff;
+}
+.Main-header{
+    padding: 10px 0;
+}
+.Main-header .location_selectbx{
+    width: 15%;
+    position: relative;
+}
+.Main-header .location_selectbx input{
+    width: 245px;
+    height: 55px;
+    border-color: #6AC7C9;
+    padding-left: 40px;
+}
+.Main-header .location_selectbx svg{
+    position: absolute;
+    top: 15px;
+    left: 8px;
+}
+.Main-header .headerFlexItem{
+    display: flex;
+    align-items: center;
+}
+.Main-header .headerFlexItem .logo{
+    width: 12%;
+}
+.Main-header .headerFlexItem .search_selectbx{
+    width: 55%;
+}
+.Main-header .headerFlexItem .search_selectbx .input-group{
+    background: #DEFCFD;
+    height: 55px;
+    border-radius: 5px;
+}
+
+.Main-header .headerFlexItem .search_selectbx .input-group input{
+    height: 55px;
+    border:none;
+    background: #DEFCFD;
+}
+.Main-header .headerFlexItem .search_selectbx .input-group .btn-outline-secondary{
+    border:none;
+}
+.Main-header .headerFlexItem .user_credentialIcon{
+    width: 23%;
+    
+}
+.Main-header .headerFlexItem .user_credentialIcon .user_credentialIconLst{
+    text-align: right;
+    padding-right: 15px;
+}
+.Main-header .headerFlexItem .user_credentialIcon li{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px;
+}
+.Main-header .headerFlexItem .user_credentialIcon li button.btn-primary{
+    background: #000;
+    height: 55px;
+    padding: 0px 30px;
+    font-family: futura_md;
+    border:none;    
+}
+.Main-header .headerFlexItem .user_credentialIcon li button.btn-primary:hover{
+    background: #FFDF03;
+    height: 55px;
+    padding: 0px 30px;
+    font-family: futura_md;
+    border:none;    
+    color: #000;
+}
+.Main-header .headerFlexItem .user_credentialIcon li a{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+.Main-header .headerFlexItem .user_credentialIcon li a span{
+    width: 25px;
+    height: 25px;
+    background: #6AC7C9;
+    border-radius: 50%;
+    font-size: 11px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    padding: 7px 0;
+    font-weight: 600;
+}
+.Main-header .headerFlexItem .user_credentialIcon li a svg{
+    width: 30px;
+    height: 30px;
+}
+.category_list_sec{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+}
+.category_list_sec .category_list_hd{width: 45%;display: table;
+    table-layout: fixed;}
+.category_list_sec .user_personalize{
+    width: 10%;
+    text-align: center;
+}
+.category_list_sec .category_list_hd li{
+    display: table-cell;
+    text-align: center;
+}
+.category_list_sec .category_list_hd li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-family: futura_lt;
+    font-weight: 600;
+}
+/* location popup */
+
+.modal.rightPopup .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 400px;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+        -ms-transform: translate3d(0%, 0, 0);
+         -o-transform: translate3d(0%, 0, 0);
+            transform: translate3d(0%, 0, 0);
+}
+.modal.rightPopup .modal-content {
+    height: 100%;
+    overflow-y: auto;
+}
+/*Right*/
+.modal.rightPopup.fade .modal-dialog {
+    right: 0px;
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+       -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+         -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+            transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+.modal.rightPopup.fade .modal-dialog .modal-content {
+    border-radius: 0px;
+}
+.modal.rightPopup.fade.in .modal-dialog {
+    right: 0;
+}
+.modal.rightPopup.fade .modal-dialog .modal-content .modal-header h5{
+    font-size: 24px;
+}
+.modal.rightPopup.fade .modal-dialog .modal-content .modal-body p.uni_welcmenote {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #999999;
+}
+.uni-form label{
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    font-size: 13px;
+}
+.modal.rightPopup.fade .modal-dialog .modal-content input {
+    height: 55px;
+    border: none;
+    background: #DEFCFD;
+    padding: 15px 10px 0;
+}
+.modal.rightPopup.fade .modal-dialog .modal-content a.frg_pswdLink {
+    display: inline-block;
+    text-align: right;
+    color: #6ac7c9;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+.auth_buttons {
+    padding: 25px 0 15px;
+}
+button.solid_button.btn {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    height: 55px;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+button.solid_button.btn:hover{
+    background: #FFDF03;
+    color: #000;
+}
+button.blkbrd_button.btn {
+    width: 100%;
+    background: #fff;
+    color: #000;
+    height: 55px;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+}
+button.blkbrd_button.btn:hover{
+    background: #6ac7c9 !important;
+    color: #000;
+    border: 1px solid #6ac7c9;
+}
+.dividerAuth{
+    position: relative;
+    text-align: center;
+}
+.dividerAuth p {
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    padding: 0px 15px;
+    z-index: 1;
+}
+.dividerAuth .dividerBrd {
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    top: 9px;
+    left: 0;
+}
+.socialLogins {
+    padding: 10px 0 30px;
+    text-align: center;
+}
+.socialLogins h6 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'futura_lt';
+}
+.socialLogins ul {
+    margin: 10px 0 0;
+}
+.socialLogins ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+.socialLogins ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #6ac7c9;
+    border-radius: 50%;
+    padding: 7px 0;
+}
+.socialLogins ul li a:hover{
+    background: #6ac7c9;
+}
+.socialLogins ul li a:hover svg{
+    color: #fff;
+    fill:#fff;
+    filter: brightness(0) invert(1);
+}
+.termsandconText p {
+    text-align: center;
+    line-height: 1.5;
+    color: #666;
+}
+.termsandconText p a{
+    color: #6ac7c9;
+}
+#staticBackdrop .modal-dialog{
+    width: 400px;
+    margin: 0;
+    height: 100vh;
+}
+#staticBackdrop .modal-dialog .modal-content{
+    height: 100vh;
+    border-radius: 0px;
+}
+#staticBackdrop .modal-dialog .modal-content .modal-header,.modal.rightPopup.fade .modal-dialog .modal-content .modal-header{
+    border-bottom:none;
+}
+#staticBackdrop .modal-dialog .modal-content .modal-header .btn-close{
+    margin: 0;
+}
+#staticBackdrop .modal-dialog .modal-content .location_popinput input{
+    height: 55px;
+    border: none;
+    background: #DEFCFD;
+}
+#staticBackdrop .modal-dialog .modal-content .currentLocBtn .brd-unibutton{
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background: #fff;
+    border: 1px solid #6AC7C9;
+    font-family: futura_lt;
+    font-weight: 600;
+    margin-top: 20px;
+}
+#staticBackdrop .modal-dialog .modal-content .currentLocBtn .brd-unibutton span{
+    padding: 0 10px 0 0;
+}
+#staticBackdrop .modal-dialog .modal-content .currentLocBtn .brd-unibutton p{
+    padding: 0 0 0 35px;
+    font-size: 14px;
+    color: #999999;
+}
+/* ======================================= */
+.Model_section,.Model_section img{
+    width: 100%;
+}
